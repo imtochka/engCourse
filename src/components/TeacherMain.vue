@@ -38,7 +38,7 @@ export default {
         },
         {
           id: 2,
-          name: "Полина Коваленко",
+          name: "Не Полина Коваленко",
           backImg: "ae.svg",
           backImgTwo: "az.svg",
           personImg: "girl2.svg",
@@ -46,7 +46,7 @@ export default {
         },
         {
           id: 3,
-          name: "Полина Коваленко",
+          name: "Точно Полина Коваленко",
           backImg: "az.svg",
           personImg: "girl1.svg",
           level: "Другой курс",

@@ -31,14 +31,14 @@ export default {
       items: [
         {
           id: 1,
-          name: "ae.svg",
+          name: "Полина Коваленко",
           backImg: "az",
           personImg: "girl1",
           level: "Базовый уровень",
         },
         {
           id: 2,
-          name: "ae.svg",
+          name: "Не Полина Коваленко",
           backImg: "ae",
           backImgTwo: "az",
           personImg: "girl2",

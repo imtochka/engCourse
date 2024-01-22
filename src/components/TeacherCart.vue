@@ -49,34 +49,31 @@
         />
       </svg>
     </div>
-    <img class="personImg" :src="personImg" alt="" />
-    <img src="" alt="" />
-    <img class="backgroundImg" :src="getImg(backImg)" alt="" />
-    <img class="personImg" :src="getImg(personImg)" alt="" />
 
+    <img class="backgroundImg" :src="imageUrlBack" alt="" />
+    <img class="personImg" :src="imageUrlPerson" alt="" />
     <img class="flag-img" src="/src/assets/img/english-flag.svg" alt="" />
   </div>
 </template>
 
 <script>
 import SvgImage from "../assets/img/treangle.svg";
+
 export default {
   data() {
-    return {
-      svgImage: SvgImage,
-    };
+    return { svgImage: SvgImage };
   },
-  name: "teacherCart",
+
   props: {
     name: {
       type: String,
       required: true,
     },
-    level: {
+    backImg: {
       type: String,
       required: true,
     },
-    backImg: {
+    level: {
       type: String,
       required: true,
     },
@@ -85,10 +82,20 @@ export default {
       type: String,
       required: true,
     },
+
+    personImgUrl: null,
   },
-  methods: {
-    getImg(path) {
-      return "/src/assets/img/" + path;
+  methods: {},
+  computed: {
+    imageUrlBack() {
+      console.log(`/src/assets/img/${this.backImg}.svg`);
+      return new URL(`/src/assets/img/${this.backImg}.svg`, import.meta.url)
+        .href;
+    },
+    imageUrlPerson() {
+      console.log(`/src/assets/img/${this.personImg}.svg`);
+      return new URL(`/src/assets/img/${this.personImg}.svg`, import.meta.url)
+        .href;
     },
   },
 };

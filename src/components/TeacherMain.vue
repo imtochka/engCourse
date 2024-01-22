@@ -12,10 +12,10 @@
         <teacher-cart
           :name="item.name"
           :level="item.level"
-          :backImg="item.backImg"
           :personImg="item.personImg"
           :newPrise="item.newPrise"
           :oldPrise="item.oldPrise"
+          :backImg="item.backImg"
         />
       </div>
     </div>
@@ -31,31 +31,32 @@ export default {
       items: [
         {
           id: 1,
-          name: "Полина Коваленко",
-          backImg: "az.svg",
-          personImg: "girl1.svg",
+          name: "ae.svg",
+          backImg: "az",
+          personImg: "girl1",
           level: "Базовый уровень",
         },
         {
           id: 2,
-          name: "Не Полина Коваленко",
-          backImg: "ae.svg",
-          backImgTwo: "az.svg",
-          personImg: "girl2.svg",
+          name: "ae.svg",
+          backImg: "ae",
+          backImgTwo: "az",
+          personImg: "girl2",
           level: "Вводно-фонетический курс",
         },
+
         {
           id: 3,
           name: "Точно Полина Коваленко",
-          backImg: "az.svg",
-          personImg: "girl1.svg",
+          backImg: "az",
+          personImg: "girl1",
           level: "Другой курс",
         },
         {
           id: 4,
           name: "Полина Коваленко",
-          backImg: "ae.svg",
-          personImg: "girl2.svg",
+          backImg: "ae",
+          personImg: "girl2",
           level: "Еще один другой курс",
         },
       ],
@@ -65,9 +66,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.teacher-block {
-  /* по умолчанию равняется 0 */
-}
 .cart-sort {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

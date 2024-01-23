@@ -9,6 +9,6 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  base: "https://imtochka.github.io/engCourse/",
+  base: "/engCourse",
   plugins: [vue()],
 });
